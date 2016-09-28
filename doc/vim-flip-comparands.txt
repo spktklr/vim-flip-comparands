@@ -1,0 +1,19 @@
+*vim-flip-comparands.txt*  Flip comparands
+
+Authors: Niko Myllynen <niko.myllynen@gmail.com>
+License: GPLv2
+
+INTRODUCTION                                    *vim-flip-comparands*
+
+Vim Flip Comparison is a plugin that allows you to flip two comparands
+around a comparison operator.
+
+MAPPINGS                                        *vim-flip-comparands-mappings*
+
+TODO
+
+OPTIONS                                        *vim-flip-comparands-options*
+
+TODO
+
+ vim:tw=78:ts=8:ft=help:norl:
