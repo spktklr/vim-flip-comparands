@@ -13,15 +13,13 @@ let g:FlipComparands_loaded = 1
 " If found, it determines the comparands. Then it flips them.
 " Make this function bindable to a key command.
 
-function! s:comparisonUnderCursor()
+function! ComparisonUnderCursor()
 
-	:echo "ei"
-    if search('[<=>]','W') >0
-		:echo "Jepa"
-	end
+    let a:result = search('[<=>]','W')
+	:echo a:result
 
 endfunction
 
-nnoremap <silent> <Plug>comparison :<C-U>call <SID>comparisonUnderCursor()<CR>
-nmap <Leader>f :call <Plug>comparison
+"nnoremap <Plug>comparison :<C-U>call <SID>ComparisonUnderCursor()<CR>
+"nmap <Leader>9 :call <Plug>comparison
 
