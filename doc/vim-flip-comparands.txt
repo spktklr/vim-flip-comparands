@@ -8,12 +8,8 @@ INTRODUCTION                                    *vim-flip-comparands*
 Vim Flip Comparison is a plugin that allows you to flip two comparands
 around a comparison operator.
 
-MAPPINGS                                        *vim-flip-comparands-mappings*
+USAGE                                           *vim-flip-comparands-mappings*
 
-TODO
-
-OPTIONS                                        *vim-flip-comparands-options*
-
-TODO
+Place the cursor over a comparison operator and call :FlipC
 
  vim:tw=78:ts=8:ft=help:norl:

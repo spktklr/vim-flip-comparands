@@ -1,21 +1,33 @@
-VIM: Flip Comparands
+Vim Flip Comparands
 ==============
 
 Vim Flip Comparands is a plugin that allows you to flip two comparands
 around a comparison operator.
 
-MAPPINGS
+Usage
 --------
 
-TODO
+Place the cursor over a comparison operator and call 
+
+```
+:FlipC
+```
 
 Installation
 ------------
 
-I recommend to use [Vundle](https://github.com/VundleVim/Vundle.vim).
+I recommend installation via [Plug](https://github.com/junegunn/vim-plug).
 
-Once help tags have been generated, you can view the manual with
-`:help flipcomparison`.
+```
+Plug 'spktklr/vim-flip-comparands'
+```
+
+Limitations
+------------
+
+The plugin only works if there are spaces surrounding the comparison
+in the braces and the comparison is on the same line. Other issues may
+also exist if using exotic comparison syntax, like OR & AND for example.
 
 Project Author
 --------------

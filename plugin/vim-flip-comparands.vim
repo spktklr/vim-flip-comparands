@@ -8,18 +8,16 @@ if exists('g:FlipComparands_loaded')
 endif
 let g:FlipComparands_loaded = 1
 
-" TODO:
-" Write function that looks for the nearest comparison operator.
-" If found, it determines the comparands. Then it flips them.
-" Make this function bindable to a key command.
-
 function! ComparisonUnderCursor()
 
-    let a:result = search('[<=>]','W')
-	:echo a:result
+  let a:result = getline('.')[col('.')-1]
+  if a:result =~# "[=!<>]"
+    normal 2F wdf WhpldW3F pw
+  else
+    :echo "Place the cursor over a comparison operator."
+  endif
 
 endfunction
 
-"nnoremap <Plug>comparison :<C-U>call <SID>ComparisonUnderCursor()<CR>
-"nmap <Leader>9 :call <Plug>comparison
+command! FlipC call ComparisonUnderCursor()
 
